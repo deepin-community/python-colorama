@@ -1,0 +1,31 @@
+Source: python-colorama
+Section: python
+Priority: optional
+Maintainer: Gürkan Myczko <gurkan@phys.ethz.ch>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/tartley/colorama
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-colorama.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-colorama
+X-Python3-Version: >= 3.6
+
+Package: python3-colorama
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Cross-platform colored terminal text in Python - Python 3.x
+ Python-colorama provides a simple cross-platform API to print colored terminal
+ text from Python applications.
+ .
+ ANSI escape character sequences are commonly used to produce colored terminal
+ text on Unix. Colorama provides some shortcuts to generate these sequences.
+ .
+ This has the happy side-effect that existing applications or libraries which
+ already use ANSI sequences to produce colored output on Linux.
+ .
+ This package provides the module for Python 3.

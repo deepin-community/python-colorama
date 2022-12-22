@@ -1,0 +1,1 @@
+Test-Command: python3 -c "import colorama; print(colorama.__version__)"
