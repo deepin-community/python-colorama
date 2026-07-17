@@ -1,7 +1,5 @@
 $ve="$HOME\.virtualenvs\colorama"
 $bin="$ve\Scripts"
-$version="$(& $bin\python.exe setup.py --version)"
 
 # Upload to PyPI.
-& $bin\twine.exe upload dist\colorama-$version-*
-
+& $bin\twine.exe upload dist\colorama-*.tar.gz dist\colorama-*.whl

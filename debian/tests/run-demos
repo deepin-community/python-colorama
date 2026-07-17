@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+cp -a colorama demos "$AUTOPKGTEST_TMP"
+cd "$AUTOPKGTEST_TMP"
+
+for py3vers in $(py3versions -s); do
+	echo "=== ${py3vers} ==="
+	for d in demos/*.py; do
+		PYTHONPATH=. "${py3vers}" "${d}" 2>&1
+	done
+done
+

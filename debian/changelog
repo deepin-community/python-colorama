@@ -1,3 +1,77 @@
+python-colorama (0.4.6-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ileana Dumitrescu ]
+  * d/control: Add myself to the uploaders field.
+
+ -- Agathe Porte <gagath@debian.org>  Thu, 31 Aug 2023 10:06:28 +0200
+
+python-colorama (0.4.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * demos: Use patch instead of sed (Closes: #1047808)
+  * Update Standards-Version to 4.6.2 (no change)
+  * Package is only team-maintained
+
+ -- Agathe Porte <gagath@debian.org>  Sat, 26 Aug 2023 13:06:03 +0200
+
+python-colorama (0.4.6-2) unstable; urgency=medium
+
+  * Team upload
+  * d/rules: Run dh_auto_build after shebang fixes
+  * autopkgtest: Don't set a local PYTHONPATH in upstream test
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 04 Dec 2022 23:44:42 +0100
+
+python-colorama (0.4.6-1) unstable; urgency=medium
+
+  * Team upload
+  * d/gbp.conf: Add basic default configuration
+  * New upstream version 0.4.6
+    (Closes: #826142)
+  * d/control: Update and switch build dependencies
+    Upstream uses now the hatchling backend instead of setuptools.
+    For package build depend on dh-sequence-python3.
+  * d/rules: Drop --with option within default target
+  * d/README.source: Adding basic information about source
+  * d/python3-colorama.docs: Renamed from docs
+    As *.examples was already used do the same for *.docs.
+  * d/control: Add pytest for running internal tests
+  * d/rules: Run the upstream tests while package build
+  * d/rules: Fix shebang in demo *.py files before build
+  * autopkgtest: Add internal tests to package testings
+  * autopkgtest: Use PYTHONPATH for run-demos
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 04 Dec 2022 09:01:00 +0100
+
+python-colorama (0.4.5-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Security-Contact.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 17 Oct 2022 00:00:44 +0100
+
+python-colorama (0.4.5-2) unstable; urgency=medium
+
+  * autopkgtest: more tests, mark previous one superficial (Closes: #974475)
+  * d/control: delete senseless phrase in description (Closes: #850526)
+  * d/control files: wrap-and-sort
+  * Move maintainer to DPT, add myself as Uploader
+  * d/control: remove X-Python3-Version
+  * d/watch: update to v4
+
+ -- Agathe Porte <debian@microjoe.org>  Wed, 17 Aug 2022 14:02:07 +0200
+
+python-colorama (0.4.5-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Update maintainer address.
+  * Bump standards version to 4.6.1.
+  * d/copyright: bump years.
+
+ -- Gürkan Myczko <tar@debian.org>  Fri, 17 Jun 2022 11:53:51 +0200
+
 python-colorama (0.4.4-1) unstable; urgency=medium
 
   [ Gürkan Myczko ]

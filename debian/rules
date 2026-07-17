@@ -3,4 +3,8 @@
 export PYBUILD_NAME=colorama
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
+	dh $@ --buildsystem=pybuild
+
+
+override_dh_auto_test:
+	dh_auto_test -- --system=custom --test-args="PYTHONPATH={build_dir} {interpreter} -m pytest -v colorama/tests"

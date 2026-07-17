@@ -1,0 +1,64 @@
+From: Agathe Porte <gagath@debian.org>
+Date: Sat, 26 Aug 2023 12:11:35 +0200
+Subject: demos: use python3 shebang
+
+The shebang used in the examples is based on classical Python2, fixing
+by replacing with a usable one.
+---
+ demos/demo01.py | 2 +-
+ demos/demo02.py | 2 +-
+ demos/demo03.py | 2 +-
+ demos/demo04.py | 2 +-
+ demos/demo05.py | 2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/demos/demo01.py b/demos/demo01.py
+index c367024..d1f2d7e 100644
+--- a/demos/demo01.py
++++ b/demos/demo01.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.
+ 
+ # print grid of all colors and brightnesses
+diff --git a/demos/demo02.py b/demos/demo02.py
+index 8ca7d4b..5cb0b2c 100644
+--- a/demos/demo02.py
++++ b/demos/demo02.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.
+ 
+ # Simple demo of changing foreground, background and brightness.
+diff --git a/demos/demo03.py b/demos/demo03.py
+index 13d5f9e..800378c 100644
+--- a/demos/demo03.py
++++ b/demos/demo03.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.
+ 
+ # Demonstrate the different behavior when autoreset is True and False.
+diff --git a/demos/demo04.py b/demos/demo04.py
+index 1dc20dc..fbfa05a 100644
+--- a/demos/demo04.py
++++ b/demos/demo04.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.
+ 
+ # check that stripped ANSI in redirected stderr does not affect stdout
+diff --git a/demos/demo05.py b/demos/demo05.py
+index 284701b..c276a89 100644
+--- a/demos/demo05.py
++++ b/demos/demo05.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.
+ 
+ # Demonstrate the difference between colorama initialized with wrapping on and off.

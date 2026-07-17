@@ -1,1 +1,14 @@
+Tests: run-demos
+Depends:
+ python3-all,
+ @,
+
 Test-Command: python3 -c "import colorama; print(colorama.__version__)"
+Restrictions: superficial
+
+Tests: upstream
+Depends:
+ python3-all,
+ python3-pytest,
+ @,
+Restrictions: allow-stderr
