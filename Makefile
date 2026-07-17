@@ -15,10 +15,9 @@ help: ## Display help for documented make targets.
 
 virtualenv=~/.virtualenvs/colorama
 pip=$(virtualenv)/bin/pip
-syspython=python3.8
+syspython=python3
 python=$(virtualenv)/bin/python
 twine=$(virtualenv)/bin/twine
-version=$(shell $(python) setup.py --version)
 
 clean: ## Remove build artifacts, .pyc files, virtualenv
 	-rm -rf build dist MANIFEST colorama.egg-info $(virtualenv)
@@ -50,16 +49,14 @@ test: ## Run tests
 
 # build packages
 
-build: ## Build an sdist and wheel
-	$(python) -m pip install --upgrade setuptools wheel
-	$(python) setup.py sdist bdist_wheel
-.PHONY: sdist
+build: ## Build a release (sdist and wheel)
+	$(python) -m build
+.PHONY: build
 
-test-release: build
+test-release: build ## Test a built release
 	./test-release
 .PHONY: test-release
 
-release: ## Upload our sdist and wheel
-	$(twine) upload dist/colorama-$(version)-*
+release: ## Upload a built release
+	$(twine) upload dist/colorama-*
 .PHONY: release
-

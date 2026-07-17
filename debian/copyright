@@ -4,7 +4,7 @@ Upstream-Contact: Jonathan Hartley <tartley@tartley.com> and Arnon Yaari
 Source: https://github.com/tartley/colorama
 
 Files: *
-Copyright: 2010-2020 Jonathan Hartley <tartley@tartley.com> and
+Copyright: 2010-2022 Jonathan Hartley <tartley@tartley.com> and
                      Arnon Yaari
 License: BSD-3
  All rights reserved.
@@ -33,7 +33,7 @@ License: BSD-3
 
 Files: debian/*
 Copyright: 2012 Khalid El Fathi <khalid@elfathi.fr>
-           2019-2020 Gürkan Myczko <gurkan@phys.ethz.ch>
+           2019-2022 Gürkan Myczko <tar@debian.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

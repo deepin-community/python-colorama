@@ -1,0 +1,17 @@
+#! /bin/bash
+
+cp -r colorama ${AUTOPKGTEST_TMP}
+
+for py3vers in $(py3versions -s); do
+    echo
+    echo "***************************"
+    echo "*** Testing with ${py3vers}"
+    echo "***************************"
+    echo
+    cd ${AUTOPKGTEST_TMP} && \
+        echo -e "Content of current working folder:\n" && \
+        ls -la && \
+        echo -e "Running tests...\n" && \
+        "${py3vers}" -m pytest -v colorama/tests && \
+        rm -rf .pytest_cache || exit 1
+done
